@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_cir"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_launcher_background" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/card_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="这是小机器"
+                        android:textSize="16sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/card_cir_lg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone"
+                        android:layout_marginLeft="2dp"
+                        android:src="@mipmap/v" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刚刚"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txt_times"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="23:36"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txt_gj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="惠普电脑"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:src="@mipmap/more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_ct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/img_ct"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left"
+                />
+            <GridView
+                android:id="@+id/car_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:stretchMode="spacingWidthUniform"
+                >
+
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+         <TextView
+             android:id="@+id/txt_send"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableLeft="@mipmap/send"
+             android:text="  1"
+             android:layout_weight="1"
+             />
+            <TextView
+                android:id="@+id/txt_rp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/reply"
+                android:text="  1"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/txt_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/good"
+                android:text="  1"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

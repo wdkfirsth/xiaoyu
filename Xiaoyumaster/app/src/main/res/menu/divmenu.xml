@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+    <!--android:id="@+id/allwebs"-->
+    <!--android:title="0"-->
+    <!--app:actionProviderClass="com.wdk.xiaoyu.mvp.view.DivMenu"-->
+    <!--app:showAsAction="always"-->
+    <!--/>-->
+    <group
+        android:id="@+id/groupa"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/all"
+            android:icon="@mipmap/weba"
+            android:title="所有微博" />
+        <item
+            android:id="@+id/xh"
+            android:icon="@mipmap/xha"
+            android:title="互相关注" />
+        <item
+            android:id="@+id/pb"
+            android:icon="@mipmap/publica"
+            android:title="公共微博" />
+
+    </group>
+
+    <group
+        android:id="@+id/groupc"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/mv"
+            android:icon="@mipmap/trans"
+            android:title="美女" />
+        <item
+            android:id="@+id/sg"
+            android:icon="@mipmap/trans"
+            android:title="帅哥" />
+        <item
+            android:id="@+id/star"
+            android:icon="@mipmap/trans"
+            android:title="明星" />
+    </group>
+    <group
+        android:id="@+id/groupb"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/change"
+            android:icon="@mipmap/changeb"
+            android:title="白天模式" />
+        <item
+            android:id="@+id/set"
+            android:icon="@mipmap/seta"
+            android:title="设置" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@mipmap/exit"
+            android:title="退出登陆" />
+    </group>
+</menu>
